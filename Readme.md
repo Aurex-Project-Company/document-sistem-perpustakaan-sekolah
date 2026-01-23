@@ -14,7 +14,7 @@
 
 ## Source Code
 
-[Source Code](git remote add origin https://github.com/Aurex-Project-Company/sipustaka.git)
+[Source Code](https://github.com/Aurex-Project-Company/sipustaka)
 
 ## Demo Aplikasi
 
@@ -23,3 +23,4 @@ Coming Soon
 ## User Guide
 
 Coming Soon
+

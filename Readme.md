@@ -14,12 +14,6 @@
 
 ## Source Code
 
-[Source Code Native](git remote add origin https://github.com/Aurex-Project-Company/sipustaka.git)
-
-[Source Code Laravel Coming Soon]
-
-## Demo Aplikasi
-
 Coming Soon
 
 ## User Guide

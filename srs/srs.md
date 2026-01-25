@@ -2,7 +2,7 @@
 
 ## SISTEM PERPUSTAKAAN SEKOLAH BERBASIS WEB
 
-Versi: 1.0
+Versi: 1.1
 
 15 Januari 2026
 
@@ -54,44 +54,72 @@ Sistem Perpustakaan Sekolah Berbasis Web adalah sistem informasi yang digunakan 
 
 ## **Kebutuhan Fungsional**
 
-### **Manajemen Pengguna**
+Kebutuhan fungsional sistem disusun berdasarkan **Use Case Diagram** yang telah ditentukan, dengan aktor utama **Admin/Petugas Perpustakaan** dan **Anggota Perpustakaan (Siswa dan Guru)**.
 
-- Sistem menyediakan fitur login dan logout
-- Admin dapat mengelola data akun pengguna
+### **Kebutuhan Fungsional Admin / Petugas Perpustakaan**
+
+### **Manajemen Data Siswa**
+
+- Sistem menyediakan fitur untuk menambah, mengubah, menghapus, dan melihat data siswa
+- Data siswa meliputi NIS, nama siswa, jenis kelamin, dan alamat
+
+### **Manajemen Data Guru**
+
+- Sistem menyediakan fitur untuk menambah, mengubah, menghapus, dan melihat data guru
+- Data guru meliputi NIP, nama guru, alamat, dan nomor kontak
+
+### **Manajemen Data Anggota**
+
+- Sistem menyediakan fitur untuk mendaftarkan anggota perpustakaan
+- Sistem mengelola jenis anggota (siswa atau guru)
+
+### **Manajemen Data Kelas**
+
+- Sistem menyediakan fitur untuk mengelola data kelas
+- Data kelas meliputi nama kelas dan tingkat
+
+### **Manajemen Tahun Ajar**
+
+- Sistem menyediakan fitur untuk mengelola data tahun ajar
+- Sistem dapat menentukan tahun ajar aktif
+
+### **Manajemen Riwayat Kelas**
+
+- Sistem menyediakan fitur untuk mencatat riwayat kelas siswa setiap tahun ajar
+- Sistem mengaitkan data siswa, kelas, dan tahun ajar
 
 ### **Manajemen Data Buku**
 
-- Admin dapat menambah, mengubah, menghapus, dan melihat data buku
-- Data buku meliputi: kode buku, judul, pengarang, penerbit, tahun terbit, kategori, dan stok
+- Sistem menyediakan fitur untuk menambah, mengubah, menghapus, dan melihat data buku
+- Data buku meliputi judul, pengarang, penerbit, tahun terbit, kategori, dan stok
 
 ### **Manajemen Kategori Buku**
 
-- Admin dapat mengelola kategori buku
-- Kategori digunakan untuk pengelompokan buku
-
-### **Manajemen Anggota**
-
-- Admin dapat mengelola data anggota perpustakaan
-- Data anggota meliputi: nomor anggota, nama, jenis anggota, kelas (jika siswa), dan alamat
+- Sistem menyediakan fitur untuk menambah, mengubah, menghapus, dan melihat kategori buku
 
 ### **Transaksi Peminjaman Buku**
 
-- Admin mencatat transaksi peminjaman buku
+- Sistem menyediakan fitur pencatatan peminjaman buku oleh anggota
+- Sistem memvalidasi ketersediaan stok buku sebelum peminjaman
 - Sistem menyimpan tanggal pinjam dan tanggal jatuh tempo
-- Sistem mengurangi stok buku secara otomatis
 
 ### **Transaksi Pengembalian Buku**
 
-- Admin mencatat pengembalian buku
-- Sistem menghitung denda keterlambatan jika ada
-- Sistem menambah stok buku
+- Sistem menyediakan fitur pencatatan pengembalian buku
+- Sistem menghitung denda keterlambatan secara otomatis
+- Sistem memperbarui status peminjaman dan stok buku
 
 ### **Laporan**
 
-- Laporan data buku
-- Laporan peminjaman
-- Laporan pengembalian
-- Laporan denda
+- Sistem menyediakan laporan peminjaman buku
+- Sistem menyediakan laporan pengembalian buku
+- Sistem menyediakan laporan denda
+
+### **Kebutuhan Fungsional Anggota (Siswa dan Guru)**
+
+### **Melihat Katalog Buku**
+
+- Anggota dapat melihat daftar dan detail buku yang tersedia di perpustakaan
 
 ---
 
@@ -102,3 +130,8 @@ Sistem Perpustakaan Sekolah Berbasis Web adalah sistem informasi yang digunakan 
 - Web server (Apache/Nginx)
 - Database server (MySQL/PostgreSQL)
 - Browser modern (Chrome, Firefox)
+
+### **Kebutuhan Perangkat Keras**
+
+- Server minimal RAM 4 GB
+- Komputer client dengan koneksi internet

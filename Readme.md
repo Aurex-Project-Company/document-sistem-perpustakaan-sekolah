@@ -18,6 +18,10 @@
 
 Source Code Larvel Coming Soon
 
+## PPT Product
+
+[Lihat PPT Product](https://drive.google.com/file/d/1--MwztzRwoG6h0B_RvNwO9yTPuKrXezQ/view?usp=sharing)
+
 ## User Guide
 
 Coming Soon
